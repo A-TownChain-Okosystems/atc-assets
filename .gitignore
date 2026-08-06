@@ -1,12 +1,8 @@
-# ATCLang build & temp files
-*.atc.compiled
-*.log
-.build/
-dist/
-tmp/
-
-# OS / Editor files
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
+/target
+Cargo.lock
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.efi
