@@ -1,48 +1,118 @@
-# Component Plan — atc-assets
+# 📋 Komponenten-Plan — atc-assets
 
-This document details the components, primary data structures, and core functions implemented in `atc-assets`.
+> **Erstellt:** 2026-08-08 | **Agent:** Aurora (Base44)
+> **Korrigiert:** Datei-Erweiterungen von .atc → Rust (.rs)
 
-## Core Component Specification
+## Übersicht
 
-### 1. 3D Render Engine (`render/render_engine.atc`)
-- **Module**: `render_engine`
-- **ATC Standard**: `ATC-90`
-- **Description**: Mesh, material, lighting, camera
-- **Key Data Structure**: `RenderPipeline`
-- **Key Function**: `render_frame()` — Renders 3D frame using active mesh, material, and camera settings
+**Repo:** atc-assets  
+**Name:** ATC Assets  
+**Beschreibung:** Asset management and token metadata  
+**Sprache:** Rust (.rs)  
+**Build-System:** Rust (.rs)-Toolchain
 
-### 1. Shader System (`shader/shader_system.atc`)
-- **Module**: `shader_system`
-- **ATC Standard**: `ATC-90`
-- **Description**: Vertex, fragment, compute shaders
-- **Key Data Structure**: `ShaderConfig`
-- **Key Function**: `compile_shader()` — Compiles GPU vertex or fragment shader bytecode
+---
 
-### 1. Animation Engine (`animation/animation_engine.atc`)
-- **Module**: `animation_engine`
-- **ATC Standard**: `ATC-90`
-- **Description**: Skeletal, morph, particle, timeline
-- **Key Data Structure**: `AnimationClip`
-- **Key Function**: `play_animation()` — Evaluates skeletal keyframes and updates node transforms
+## Komponenten
 
-### 1. Audio Engine (`audio/audio_engine.atc`)
-- **Module**: `audio_engine`
-- **ATC Standard**: `ATC-90`
-- **Description**: 3D spatial audio, mixing, effects, streaming
-- **Key Data Structure**: `AudioStream`
-- **Key Function**: `mix_audio_channels()` — Processes spatial audio positioning and outputs mixed audio buffer
+### 1. `src/lib.rs`
 
-### 1. Media Generator (`media/media_generator.atc`)
-- **Module**: `media_generator`
-- **ATC Standard**: `ATC-90`
-- **Description**: AI-powered image, video, text generation
-- **Key Data Structure**: `GenerationPrompt`
-- **Key Function**: `generate_media()` — Triggers generative model to produce image, video, or audio asset
+**Beschreibung:** Crate root and module declarations
 
-### 1. Asset Vault (`vault/asset_vault.atc`)
-- **Module**: `asset_vault`
-- **ATC Standard**: `ATC-90`
-- **Description**: NFT-backed asset storage, metadata, licensing
-- **Key Data Structure**: `AssetVaultRecord`
-- **Key Function**: `verify_license()` — Checks NFT ownership and active licensing status for digital asset
+**Status:** 📋 GEPLANT
 
+**Schnittstellen:**
+- Eingabe: —
+- Ausgabe: —
+- Abhängigkeiten: ATC Ecosystem
+
+**Akzeptanzkriterien:**
+1. Datei existiert und kompiliert mit Rust (.rs)
+2. Alle öffentlichen Funktionen haben Type-Signatures
+3. Modul ist im FILE_REGISTER.md eingetragen
+
+### 2. `src/metadata.rs`
+
+**Beschreibung:** Token metadata definitions and serialization
+
+**Status:** 📋 GEPLANT
+
+**Schnittstellen:**
+- Eingabe: —
+- Ausgabe: —
+- Abhängigkeiten: ATC Ecosystem
+
+**Akzeptanzkriterien:**
+1. Datei existiert und kompiliert mit Rust (.rs)
+2. Alle öffentlichen Funktionen haben Type-Signatures
+3. Modul ist im FILE_REGISTER.md eingetragen
+
+### 3. `src/registry.rs`
+
+**Beschreibung:** Asset registry and lookup
+
+**Status:** 📋 GEPLANT
+
+**Schnittstellen:**
+- Eingabe: —
+- Ausgabe: —
+- Abhängigkeiten: ATC Ecosystem
+
+**Akzeptanzkriterien:**
+1. Datei existiert und kompiliert mit Rust (.rs)
+2. Alle öffentlichen Funktionen haben Type-Signatures
+3. Modul ist im FILE_REGISTER.md eingetragen
+
+### 4. `src/mint.rs`
+
+**Beschreibung:** Minting logic for ATC-8300/9000 tokens
+
+**Status:** 📋 GEPLANT
+
+**Schnittstellen:**
+- Eingabe: —
+- Ausgabe: —
+- Abhängigkeiten: ATC Ecosystem
+
+**Akzeptanzkriterien:**
+1. Datei existiert und kompiliert mit Rust (.rs)
+2. Alle öffentlichen Funktionen haben Type-Signatures
+3. Modul ist im FILE_REGISTER.md eingetragen
+
+### 5. `src/transfer.rs`
+
+**Beschreibung:** Asset transfer with capability checks
+
+**Status:** 📋 GEPLANT
+
+**Schnittstellen:**
+- Eingabe: —
+- Ausgabe: —
+- Abhängigkeiten: ATC Ecosystem
+
+**Akzeptanzkriterien:**
+1. Datei existiert und kompiliert mit Rust (.rs)
+2. Alle öffentlichen Funktionen haben Type-Signatures
+3. Modul ist im FILE_REGISTER.md eingetragen
+
+### 6. `src/burn.rs`
+
+**Beschreibung:** Token burning mechanism
+
+**Status:** 📋 GEPLANT
+
+**Schnittstellen:**
+- Eingabe: —
+- Ausgabe: —
+- Abhängigkeiten: ATC Ecosystem
+
+**Akzeptanzkriterien:**
+1. Datei existiert und kompiliert mit Rust (.rs)
+2. Alle öffentlichen Funktionen haben Type-Signatures
+3. Modul ist im FILE_REGISTER.md eingetragen
+
+---
+
+## Hinweis
+
+Dieser Komponenten-Plan wurde korrigiert: Die ursprünglichen .atc-Dateinamen wurden durch Rust (.rs)-Dateinamen ersetzt, um die tatsächliche Repository-Sprache widerzuspiegeln.
