@@ -1,12 +1,6 @@
-//! Asset-Management — Fungible Tokens, NFTs, Royalties
-//!
-//! Part of the A-TownChain-Okosystems ecosystem.
-//! Copyright (c) Michael Wroblewski. All Rights Reserved.
-
-#![no_std]
-
-pub mod fungible;
-pub mod nft;
+// atc-assets — Asset management and token metadata
+pub mod metadata;
 pub mod registry;
-pub mod royalty;
-pub mod collection;
+pub mod mint;
+pub mod transfer;
+pub mod burn;
